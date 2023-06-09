@@ -74,51 +74,6 @@ namespace xTest
         }
 
         [Fact]
-        public void Notification_Details_Test()
-        {
-            var message = "New message";
-            var recipient = new User { Id = 7, fullname = "Sam" };
-
-            // Act
-            var notification = new Notification { Message = message, Recipient = recipient };
-
-            // Assert
-            Assert.Equal(message, notification.Message);
-            Assert.Equal(recipient, notification.Recipient);
-        }
-
-        [Fact]
-        public void Notification_SentDate_Test()
-        {
-            var message = "message alert";
-            var recipient = new User { Id = 1, fullname = "Harry" };
-
-            // Act
-            var notification = new Notification { Message = message, Recipient = recipient };
-
-            // Assert
-            Assert.Equal(default(DateTime), notification.CreatedAt);
-        }
-
-        [Fact]
-        public void Email_Details_Test()
-        {
-            
-                // arrange
-                var from = "sender@demo.com";
-                var to = "recipient@demo.com";
-                var subject = "Test Email";
-                var body = "This is a test email";
-
-                // act
-                var email = new Email { From = from, To = to, Subject = subject, Body = body };
-
-                // assert
-                Assert.Equal(from, email.From);
-                Assert.Equal(to, email.To);
-        }
-
-        [Fact]
         public void Email_SentDate_Test()
         {
             var from = "sender@demo.com";
@@ -163,12 +118,87 @@ namespace xTest
             Assert.Equal(default(DateTime), friendship.CreatedAt);
         }
 
+       
+
+    }
+
+    public class Test_Notification_component
+    {
+        [Fact]
+        public void Notification_Details_Test()
+        {
+            var message = "New message";
+            var recipient = new User { Id = 7, fullname = "Sam" };
+
+            // Act
+            var notification = new Notification { Message = message, Recipient = recipient };
+
+            // Assert
+            Assert.Equal(message, notification.Message);
+            Assert.Equal(recipient, notification.Recipient);
+        }
+
+        [Fact]
+        public void Notification_SentDate_Test()
+        {
+            var message = "message alert";
+            var recipient = new User { Id = 1, fullname = "Harry" };
+
+            // Act
+            var notification = new Notification { Message = message, Recipient = recipient };
+
+            // Assert
+            Assert.Equal(default(DateTime), notification.CreatedAt);
+        }
+
+
+    }
+
+    public class Test_Email_component
+    {
+        [Fact]
+        public void Email_Details_Test()
+        {
+
+            // arrange
+            var from = "sender@demo.com";
+            var to = "recipient@demo.com";
+            var subject = "Test Email";
+            var body = "This is a test email";
+
+            // act
+            var email = new Email { From = from, To = to, Subject = subject, Body = body };
+
+            // assert
+            Assert.Equal(from, email.From);
+            Assert.Equal(to, email.To);
+        }
+
+        [Fact]
+        public void Email_SentDate_Test()
+        {
+            var from = "sender@demo.com";
+            var to = "recipient@demo.com";
+            var subject = "Test Email";
+            var body = "This is a test email";
+
+            // Act
+            var email = new Email { From = from, To = to, Subject = subject, Body = body };
+
+            // Assert
+            Assert.Equal(default(DateTime), email.SentAt);
+        }
+
+
+    }
+    public class Test_Api_component
+    {
         [Fact]
         public void Test_Api()
         {
             var userRepository = new MockRepository();
             var userService = new UserService(userRepository);
-            var user = new User { Id = 2 , fullname = "Sam" };
+            var user = new User { Id = 2, fullname = "Sam" };
             var userController = new UserController(userService);
 
             // Act
@@ -177,6 +207,6 @@ namespace xTest
             // Assert
             Assert.False(userController.GetUser(2));
         }
-
     }
+
 }

@@ -6,9 +6,9 @@ using DataAccess;
 
 namespace BussinessLogic
 {
+    //User class 
    public class User
-    {
-        
+    { 
         public int Id { get; set; }
         public string fullname { get; set; }
         private string username { get; set; }
@@ -18,6 +18,7 @@ namespace BussinessLogic
        
     }
 
+    //Post class 
     public class Post
     {
         public int Id { get; set; }
@@ -27,7 +28,7 @@ namespace BussinessLogic
         public User Author { get; set; }
     }
 
-
+    //Notification class 
     public class Notification
     {
         public int Id { get; set; }
@@ -35,7 +36,7 @@ namespace BussinessLogic
         public DateTime CreatedAt { get; set; }
         public User Recipient { get; set; }
     }
-
+    //Email class
     public class Email
     {
         public string From { get; set; }
@@ -45,43 +46,48 @@ namespace BussinessLogic
         public DateTime SentAt { get; set; }
     }
 
-
+    //Friendship class
     public class Friendship
     {
         public int User1Id { get; set; }
         public int User2Id { get; set; }
         public DateTime CreatedAt { get; set; }
     }
+
+    //User manipulation class 
     public class UserService
     {
+
+        //User repository Interface
         private readonly Iuserrepository _userrepository;
 
         public UserService(Iuserrepository iuserrepository)
         {
+            // class constructor 
             this._userrepository = iuserrepository;
         }
         
         public void CreateUser(User user)
         {
-            //create a new user
+            //method to create a new user
             _userrepository.CreateUser(user);
         }
 
         public object GetUserId(int Userid)
         {
-            //Search for a using a unique id 
+            //method to search for a user using a unique id 
           return  _userrepository.GetUserbyid(Userid);
         }
 
         public void updateUser(User user)
         {
-            //update existing user
+            //method to update existing user
             _userrepository.UpdateUser(user);
         }
        
         public void DeleteUser(int UserId)
         {
-            //delete a user with unique id
+            //method to delete a user with unique id
             _userrepository.DeleteUser(UserId);
         }
 
@@ -94,6 +100,7 @@ namespace BussinessLogic
         private readonly UserService _userservice;
         public UserController(UserService userService)
         {
+            //class constructor
             _userservice = userService;
         }
 
@@ -104,6 +111,7 @@ namespace BussinessLogic
 
         public bool GetUser(int id)
         {
+            //Method to get the user by unique id through Api controller
             bool con = false; 
             User user = (User)_userservice.GetUserId(id);
             if (user != null)

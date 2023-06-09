@@ -17,6 +17,8 @@ namespace xTest
         {
             _user = new List<User>()
             {
+                //class constructor and will initialize list of users when instantiated 
+
                 new User{ Id = 20, fullname = "Rob" },
                 new User{ Id = 16, fullname = "Dav" },
             };
@@ -24,6 +26,8 @@ namespace xTest
         }
         public void CreateUser(object user)
         {
+            //method to create a new user
+
             _user.Add((User)user);
         }
 
@@ -57,6 +61,7 @@ namespace xTest
         }
         public List<User> GetAllUser()
         {
+            //method to return list of all users
             return _user;
         }
     }

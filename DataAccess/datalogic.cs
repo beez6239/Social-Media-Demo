@@ -7,6 +7,7 @@ namespace DataAccess
 {
     public interface Iuserrepository
     {
+        //IuserRepository interface
         object GetUserbyid(int user);
         void CreateUser(object user);
         void UpdateUser(object user);
