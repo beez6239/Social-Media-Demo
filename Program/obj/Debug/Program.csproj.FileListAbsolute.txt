@@ -1,0 +1,7 @@
+C:\Users\OSAS\Desktop\4.1\Program\bin\Debug\Program.exe.config
+C:\Users\OSAS\Desktop\4.1\Program\bin\Debug\Program.exe
+C:\Users\OSAS\Desktop\4.1\Program\bin\Debug\Program.pdb
+C:\Users\OSAS\Desktop\4.1\Program\obj\Debug\Program.csproj.AssemblyReference.cache
+C:\Users\OSAS\Desktop\4.1\Program\obj\Debug\Program.csproj.CoreCompileInputs.cache
+C:\Users\OSAS\Desktop\4.1\Program\obj\Debug\Program.exe
+C:\Users\OSAS\Desktop\4.1\Program\obj\Debug\Program.pdb

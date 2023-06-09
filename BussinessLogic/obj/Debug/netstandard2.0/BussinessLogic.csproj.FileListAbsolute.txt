@@ -1,0 +1,13 @@
+C:\Users\OSAS\Desktop\4.1\BussinessLogic\bin\Debug\netstandard2.0\BussinessLogic.deps.json
+C:\Users\OSAS\Desktop\4.1\BussinessLogic\bin\Debug\netstandard2.0\BussinessLogic.dll
+C:\Users\OSAS\Desktop\4.1\BussinessLogic\bin\Debug\netstandard2.0\BussinessLogic.pdb
+C:\Users\OSAS\Desktop\4.1\BussinessLogic\obj\Debug\netstandard2.0\BussinessLogic.csproj.AssemblyReference.cache
+C:\Users\OSAS\Desktop\4.1\BussinessLogic\obj\Debug\netstandard2.0\BussinessLogic.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\OSAS\Desktop\4.1\BussinessLogic\obj\Debug\netstandard2.0\BussinessLogic.AssemblyInfoInputs.cache
+C:\Users\OSAS\Desktop\4.1\BussinessLogic\obj\Debug\netstandard2.0\BussinessLogic.AssemblyInfo.cs
+C:\Users\OSAS\Desktop\4.1\BussinessLogic\obj\Debug\netstandard2.0\BussinessLogic.csproj.CoreCompileInputs.cache
+C:\Users\OSAS\Desktop\4.1\BussinessLogic\obj\Debug\netstandard2.0\BussinessLogic.dll
+C:\Users\OSAS\Desktop\4.1\BussinessLogic\obj\Debug\netstandard2.0\BussinessLogic.pdb
+C:\Users\OSAS\Desktop\4.1\BussinessLogic\bin\Debug\netstandard2.0\DataAccess.dll
+C:\Users\OSAS\Desktop\4.1\BussinessLogic\bin\Debug\netstandard2.0\DataAccess.pdb
+C:\Users\OSAS\Desktop\4.1\BussinessLogic\obj\Debug\netstandard2.0\BussinessLogic.csproj.CopyComplete

@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "sRj20txIPQxaiqFNELvQbwsUVY8fG9OtHHL+h26OzMjKiEwMCAK85x3hUhD5aTTtdzxl0nEdsya4v03E8GmhMg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\OSAS\\Desktop\\4.1\\BussinessLogic\\BussinessLogic.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\OSAS\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\OSAS\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

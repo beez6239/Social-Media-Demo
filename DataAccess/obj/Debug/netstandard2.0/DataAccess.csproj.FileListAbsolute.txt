@@ -1,0 +1,10 @@
+C:\Users\OSAS\Desktop\4.1\DataAccess\bin\Debug\netstandard2.0\DataAccess.deps.json
+C:\Users\OSAS\Desktop\4.1\DataAccess\bin\Debug\netstandard2.0\DataAccess.dll
+C:\Users\OSAS\Desktop\4.1\DataAccess\bin\Debug\netstandard2.0\DataAccess.pdb
+C:\Users\OSAS\Desktop\4.1\DataAccess\obj\Debug\netstandard2.0\DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\OSAS\Desktop\4.1\DataAccess\obj\Debug\netstandard2.0\DataAccess.AssemblyInfoInputs.cache
+C:\Users\OSAS\Desktop\4.1\DataAccess\obj\Debug\netstandard2.0\DataAccess.AssemblyInfo.cs
+C:\Users\OSAS\Desktop\4.1\DataAccess\obj\Debug\netstandard2.0\DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\OSAS\Desktop\4.1\DataAccess\obj\Debug\netstandard2.0\DataAccess.dll
+C:\Users\OSAS\Desktop\4.1\DataAccess\obj\Debug\netstandard2.0\DataAccess.pdb
+C:\Users\OSAS\Desktop\4.1\DataAccess\obj\Debug\netstandard2.0\DataAccess.csproj.AssemblyReference.cache
