@@ -162,5 +162,21 @@ namespace xTest
             // Assert
             Assert.Equal(default(DateTime), friendship.CreatedAt);
         }
+
+        [Fact]
+        public void Test_Api()
+        {
+            var userRepository = new MockRepository();
+            var userService = new UserService(userRepository);
+            var user = new User { Id = 2 , fullname = "Sam" };
+            var userController = new UserController(userService);
+
+            // Act
+            userController.GetUser(2);
+
+            // Assert
+            Assert.False(userController.GetUser(2));
+        }
+
     }
 }

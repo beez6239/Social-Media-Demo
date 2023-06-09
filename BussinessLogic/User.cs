@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using DataAccess;
 
 
+
 namespace BussinessLogic
 {
    public class User
@@ -83,7 +84,34 @@ namespace BussinessLogic
             //delete a user with unique id
             _userrepository.DeleteUser(UserId);
         }
-        
+
     }
-  
+
+
+    //Api controller class
+    public class UserController
+    {
+        private readonly UserService _userservice;
+        public UserController(UserService userService)
+        {
+            _userservice = userService;
+        }
+
+        public void CreateUser(User user)
+        {
+            _userservice.CreateUser(user);
+        }
+
+        public bool GetUser(int id)
+        {
+            bool con = false; 
+            User user = (User)_userservice.GetUserId(id);
+            if (user != null)
+                con = true;
+            return con;
+
+             
+        }
+    }
+
 }
